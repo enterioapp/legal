@@ -33,7 +33,7 @@
 <body>
 
 <h1>Privacy Policy for Enterio</h1>
-<p class="updated">Last updated: 27 September 2026</p>
+<p class="updated">Last updated: 6 November 2026</p>
 
 <p class="lang"><a href="privacy-policy.de.html">Deutsche Fassung</a></p>
 
@@ -43,15 +43,15 @@
 
 <h2>Your data-deletion rights</h2>
 
-<p>You can delete any creation directly in the app at any time, which removes both the original photo and the generated image. To delete your entire account and all associated data, use "Delete my data" in the app's Settings — this permanently removes your account, your photos, and your generated images. You can also email <a href="mailto:enterio.app@gmx.at">enterio.app@gmx.at</a>; we will action such requests without undue delay and within one month at the latest, as required by the GDPR. We retain data only where we are legally required to.</p>
+<p>You can delete any creation directly in the app at any time, which removes both the original photo and the generated image. To delete your entire account and all associated data, use "Delete my data" in the app's Settings — this permanently removes your account, your photos, and your generated images. You can also email <a href="mailto:enterio.app@gmx.at">enterio.app@gmx.at</a>; we will action such requests without undue delay and within one month at the latest, as required by the GDPR. A few records stay for a limited time after that; section 4 lists them.</p>
 
 <h2>1. What we collect</h2>
 
 <table>
   <tr><th>Data</th><th>Why</th><th>Legal basis (GDPR)</th></tr>
   <tr>
-    <td><strong>Room photos you upload or take</strong></td>
-    <td>To generate your AI redesign. Photos are sent to our image-generation providers to produce the result.</td>
+    <td><strong>Room photos you upload or take, photos of objects or style references you add, and the areas you mark in a photo</strong></td>
+    <td>To generate your AI redesign. These images are sent to our image-generation providers to produce the result.</td>
     <td>Art. 6(1)(b) — performance of the service you request</td>
   </tr>
   <tr>
@@ -75,9 +75,9 @@
     <td>Art. 6(1)(b) / 6(1)(f)</td>
   </tr>
   <tr>
-    <td><strong>A marker stored on your device (iOS Keychain)</strong></td>
-    <td>Records whether this iPhone has already used its one free example design (and, from earlier app versions, how many free designs it used), so the free offer can be used once per device. It contains nothing else about you. It stays on the device when the app is reinstalled or you use "Delete my data"; it is removed when the device is reset.</td>
-    <td>Art. 6(1)(f) — legitimate interest in preventing abuse of the free offer; storing it on your device is necessary to provide the free example design once per device (§ 165(3) Austrian Telecommunications Act 2021)</td>
+    <td><strong>Markers stored on your device (iOS Keychain)</strong></td>
+    <td>Record whether this iPhone has already used its one free example design (and, from earlier app versions, how many free designs it used), whether the one-time special offer has been shown, how often and when we asked for an App Store rating, and whether a subscription was active at the last check. They make sure the free example design and the special offer are available once per device, that you are not asked for a rating too often, and that the app opens on the right screen even when the App Store answers slowly. They contain nothing else about you and are not sent to us. They stay on the device when the app is reinstalled or you use "Delete my data"; they are removed when the device is reset.</td>
+    <td>Art. 6(1)(f) — legitimate interest in preventing abuse of the free offer, keeping the one-time offer one-time, not asking too often, and opening the app on the right screen; storing the free-offer marker on your device is necessary to provide the free example design once per device (§ 165(3) Austrian Telecommunications Act 2021)</td>
   </tr>
   <tr>
     <td><strong>Subscription status</strong></td>
@@ -98,20 +98,22 @@
 
 <ul>
   <li>Supabase — hosting, database, authentication, and storage of your photos and generated images.</li>
-  <li>fal.ai — AI image generation (FLUX) for the Decorate, Lighting, Wall and Floor tools.</li>
+  <li>fal.ai — AI image generation (FLUX, developed by Black Forest Labs) for the Decorate, Lighting, Wall and Floor tools. If fal.ai does not deliver a result in time, OpenAI processes the same request instead.</li>
   <li>OpenAI — AI image generation (GPT Image) for Interior Redesign (including the free example design), Fill Empty Room, Style Transfer, Replace, Add and Remove.</li>
   <li>RevenueCat — subscription management: receives your anonymous account identifier and your App Store purchase/subscription status so your Pro plan is recognised. RevenueCat never receives your photos or your payment-card details.</li>
 </ul>
 
 <p>Your uploaded photo is transmitted to the relevant provider to produce your result. fal.ai, OpenAI, and RevenueCat are based in the United States, so generating a result (or managing a subscription) can involve transferring data to the USA — for RevenueCat this is limited to your anonymous identifier and subscription status, never your photos. Supabase is incorporated in the United States but stores your data on EU-based servers (Frankfurt). Where data is processed or transferred outside the EU, the transfer is protected by appropriate safeguards such as the EU Standard Contractual Clauses (and, where the provider is certified, the EU–US Data Privacy Framework).</p>
 
-<p>Under their API terms, fal.ai and OpenAI do not use images submitted through the service to train their AI models.</p>
+<p>Under its API terms, OpenAI does not use images submitted through the service to train its AI models. For the FLUX tools, your image is passed through fal.ai to Black Forest Labs, the developer of FLUX, whose terms allow it to use submitted images and results to train and improve its AI models. We instruct fal.ai not to keep a history of the request and to delete the result file after one hour.</p>
 
 <p>Before your first image is transmitted to a third-party AI provider, the app asks for your explicit consent.</p>
 
 <h2>4. How long we keep it</h2>
 
-<p>Your uploaded photos and generated images are stored so they remain available in your gallery, until you delete them or request deletion of your data. Deleting an item in the app removes both the stored original and the generated result. Hashed-IP and usage-count records are short-lived and used only for rate-limiting windows — except the record that your account has used its free example design, which is kept for as long as your account exists.</p>
+<p>Your uploaded photos and generated images are stored so they remain available in your gallery, until you delete them or request deletion of your data. Deleting an item in the app removes the stored original, the generated result, and any object or style photo and marked area that belong to it. Hashed-IP records are deleted automatically after 30 days and usage counts after 90 days. Two usage records are kept for as long as your account exists: that your account has used its free example design, and how many designs it made during a free trial.</p>
+
+<p>"Delete my data" removes your account, your images, and all usage records linked to your account. Three things remain: hashed-IP records, which are not linked to your account and expire after 30 days; the markers on your device (section 1); and the record of your anonymous identifier and subscription history at RevenueCat, which contains no name or photos. If you want the RevenueCat record removed as well, contact us before you use "Delete my data", because we can no longer identify it afterwards. Apple keeps its own purchase records under its privacy policy.</p>
 
 <h2>5. Your rights</h2>
 
@@ -138,14 +140,14 @@
 
 <h2>8. Integrated AI models</h2>
 
-<p>Enterio generates images using the following third-party AI providers. Your uploaded room photo and your prompt are sent to the relevant provider only to produce your result:</p>
+<p>Enterio generates images using the following third-party AI providers. Your uploaded room photo and your prompt are sent to the relevant provider to produce your result:</p>
 
 <ul>
   <li>FLUX (fal.ai / Black Forest Labs) — image generation for the Decorate, Lighting, Wall and Floor tools.</li>
   <li>GPT Image (OpenAI) — image generation for Interior Redesign (including the free example design), Fill Empty Room, Style Transfer, Replace, Add and Remove.</li>
 </ul>
 
-<p>Under these providers' API terms, your images and prompts are not used to train their AI models. Each provider processes data under its own privacy terms.</p>
+<p>OpenAI does not use your images and prompts to train its AI models. Black Forest Labs' terms allow it to use images and prompts submitted for FLUX to train and improve its models. Each provider processes data under its own privacy terms.</p>
 
 <p>Images generated by Enterio are created using artificial intelligence. In line with the EU AI Act (Article 50), every generated image file carries a machine-readable marking (metadata) that identifies it as AI-generated, and the example design in the onboarding also shows a visible label. Please do not remove these markings.</p>
 

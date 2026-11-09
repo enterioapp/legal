@@ -33,7 +33,7 @@
 <body>
 
 <h1>Datenschutzerklärung für Enterio</h1>
-<p class="updated">Zuletzt aktualisiert: 27. September 2026</p>
+<p class="updated">Zuletzt aktualisiert: 6. November 2026</p>
 
 <p class="lang"><a href="privacy-policy.html">English version</a></p>
 
@@ -43,15 +43,15 @@
 
 <h2>Dein Recht auf Löschung</h2>
 
-<p>Du kannst jedes Ergebnis jederzeit direkt in der App löschen; dabei werden sowohl das Originalfoto als auch das erzeugte Bild entfernt. Um dein gesamtes Konto samt allen zugehörigen Daten zu löschen, nutze „Meine Daten löschen" in den Einstellungen der App — damit werden dein Konto, deine Fotos und deine erzeugten Bilder dauerhaft entfernt. Du kannst dich auch per E-Mail an <a href="mailto:enterio.app@gmx.at">enterio.app@gmx.at</a> wenden; wir bearbeiten solche Anfragen unverzüglich, spätestens jedoch innerhalb eines Monats, wie es die DSGVO vorschreibt. Daten bewahren wir nur dort auf, wo wir gesetzlich dazu verpflichtet sind.</p>
+<p>Du kannst jedes Ergebnis jederzeit direkt in der App löschen; dabei werden sowohl das Originalfoto als auch das erzeugte Bild entfernt. Um dein gesamtes Konto samt allen zugehörigen Daten zu löschen, nutze „Meine Daten löschen" in den Einstellungen der App — damit werden dein Konto, deine Fotos und deine erzeugten Bilder dauerhaft entfernt. Du kannst dich auch per E-Mail an <a href="mailto:enterio.app@gmx.at">enterio.app@gmx.at</a> wenden; wir bearbeiten solche Anfragen unverzüglich, spätestens jedoch innerhalb eines Monats, wie es die DSGVO vorschreibt. Einige wenige Datensätze bleiben danach noch für begrenzte Zeit bestehen; Abschnitt 4 nennt sie.</p>
 
 <h2>1. Welche Daten wir verarbeiten</h2>
 
 <table>
   <tr><th>Daten</th><th>Zweck</th><th>Rechtsgrundlage (DSGVO)</th></tr>
   <tr>
-    <td><strong>Raumfotos, die du hochlädst oder aufnimmst</strong></td>
-    <td>Zur Erzeugung deines KI-Neuentwurfs. Die Fotos werden an unsere Anbieter für Bildgenerierung übermittelt, um das Ergebnis zu erstellen.</td>
+    <td><strong>Raumfotos, die du hochlädst oder aufnimmst, Fotos von Objekten oder Stilvorlagen, die du hinzufügst, und die Bereiche, die du in einem Foto markierst</strong></td>
+    <td>Zur Erzeugung deines KI-Neuentwurfs. Diese Bilder werden an unsere Anbieter für Bildgenerierung übermittelt, um das Ergebnis zu erstellen.</td>
     <td>Art. 6 Abs. 1 lit. b — Erfüllung des von dir angeforderten Dienstes</td>
   </tr>
   <tr>
@@ -75,9 +75,9 @@
     <td>Art. 6 Abs. 1 lit. b / Art. 6 Abs. 1 lit. f</td>
   </tr>
   <tr>
-    <td><strong>Ein Merker auf deinem Gerät (iOS-Schlüsselbund)</strong></td>
-    <td>Hält fest, ob dieses iPhone sein eines kostenloses Beispiel-Design bereits genutzt hat (und, aus früheren App-Versionen, wie viele Gratis-Designs es genutzt hat), damit das Gratis-Angebot einmal pro Gerät genutzt werden kann. Er enthält sonst nichts über dich. Er bleibt auf dem Gerät, wenn die App neu installiert oder „Meine Daten löschen" genutzt wird, und wird beim Zurücksetzen des Geräts entfernt.</td>
-    <td>Art. 6 Abs. 1 lit. f — berechtigtes Interesse an der Verhinderung von Missbrauch des Gratis-Angebots; die Speicherung auf deinem Gerät ist erforderlich, um das kostenlose Beispiel-Design einmal pro Gerät bereitzustellen (§ 165 Abs. 3 TKG 2021)</td>
+    <td><strong>Merker auf deinem Gerät (iOS-Schlüsselbund)</strong></td>
+    <td>Halten fest, ob dieses iPhone sein eines kostenloses Beispiel-Design bereits genutzt hat (und, aus früheren App-Versionen, wie viele Gratis-Designs es genutzt hat), ob das einmalige Sonderangebot bereits gezeigt wurde, wie oft und wann wir um eine App-Store-Bewertung gebeten haben und ob bei der letzten Prüfung ein Abo aktiv war. So sind das kostenlose Beispiel-Design und das Sonderangebot einmal pro Gerät verfügbar, du wirst nicht zu oft um eine Bewertung gebeten, und die App öffnet auf dem richtigen Bildschirm, auch wenn der App Store langsam antwortet. Sie enthalten sonst nichts über dich und werden nicht an uns übermittelt. Sie bleiben auf dem Gerät, wenn die App neu installiert oder „Meine Daten löschen" genutzt wird, und werden beim Zurücksetzen des Geräts entfernt.</td>
+    <td>Art. 6 Abs. 1 lit. f — berechtigtes Interesse an der Verhinderung von Missbrauch des Gratis-Angebots, daran, dass das einmalige Angebot einmalig bleibt, daran, nicht zu oft zu fragen, und daran, die App auf dem richtigen Bildschirm zu öffnen; die Speicherung des Gratis-Merkers auf deinem Gerät ist erforderlich, um das kostenlose Beispiel-Design einmal pro Gerät bereitzustellen (§ 165 Abs. 3 TKG 2021)</td>
   </tr>
   <tr>
     <td><strong>Abo-Status</strong></td>
@@ -98,20 +98,22 @@
 
 <ul>
   <li>Supabase — Hosting, Datenbank, Authentifizierung sowie Speicherung deiner Fotos und erzeugten Bilder.</li>
-  <li>fal.ai — KI-Bildgenerierung (FLUX) für die Werkzeuge Dekorieren, Beleuchtung, Wand und Boden.</li>
+  <li>fal.ai — KI-Bildgenerierung (FLUX, entwickelt von Black Forest Labs) für die Werkzeuge Dekorieren, Beleuchtung, Wand und Boden. Liefert fal.ai nicht rechtzeitig ein Ergebnis, verarbeitet OpenAI dieselbe Anfrage.</li>
   <li>OpenAI — KI-Bildgenerierung (GPT Image) für Raum neu gestalten (einschließlich des kostenlosen Beispiel-Designs), Leeren Raum einrichten, Stil übertragen, Ersetzen, Hinzufügen und Entfernen.</li>
   <li>RevenueCat — Abo-Verwaltung: erhält deine anonyme Kontokennung und deinen App-Store-Kauf- bzw. Abo-Status, damit dein Pro-Tarif erkannt wird. RevenueCat erhält weder deine Fotos noch deine Zahlungskartendaten.</li>
 </ul>
 
 <p>Dein hochgeladenes Foto wird an den jeweiligen Anbieter übermittelt, um dein Ergebnis zu erzeugen. fal.ai, OpenAI und RevenueCat haben ihren Sitz in den Vereinigten Staaten; die Erzeugung eines Ergebnisses (bzw. die Abo-Verwaltung) kann daher eine Datenübermittlung in die USA umfassen — bei RevenueCat beschränkt sich diese auf deine anonyme Kennung und deinen Abo-Status, niemals auf deine Fotos. Supabase ist in den Vereinigten Staaten ansässig, speichert deine Daten jedoch auf Servern in der EU (Frankfurt). Soweit Daten außerhalb der EU verarbeitet oder dorthin übermittelt werden, ist die Übermittlung durch geeignete Garantien abgesichert, insbesondere die EU-Standardvertragsklauseln (und, sofern der Anbieter zertifiziert ist, das EU-US Data Privacy Framework).</p>
 
-<p>Nach ihren API-Bedingungen verwenden fal.ai und OpenAI die über den Dienst übermittelten Bilder nicht zum Training ihrer KI-Modelle.</p>
+<p>Nach seinen API-Bedingungen verwendet OpenAI die über den Dienst übermittelten Bilder nicht zum Training seiner KI-Modelle. Bei den FLUX-Werkzeugen gelangt dein Bild über fal.ai zu Black Forest Labs, dem Entwickler von FLUX; dessen Bedingungen erlauben, übermittelte Bilder und Ergebnisse zum Training und zur Verbesserung seiner KI-Modelle zu verwenden. Wir weisen fal.ai an, keinen Verlauf der Anfrage zu speichern und die Ergebnisdatei nach einer Stunde zu löschen.</p>
 
 <p>Bevor dein erstes Bild an einen KI-Anbieter übermittelt wird, holt die App deine ausdrückliche Einwilligung ein.</p>
 
 <h2>4. Wie lange wir Daten speichern</h2>
 
-<p>Deine hochgeladenen Fotos und erzeugten Bilder werden gespeichert, damit sie in deiner Galerie verfügbar bleiben — so lange, bis du sie löschst oder die Löschung deiner Daten verlangst. Das Löschen eines Eintrags in der App entfernt sowohl das gespeicherte Original als auch das erzeugte Ergebnis. Datensätze mit gehashter IP-Adresse und Nutzungszählern werden nur kurzzeitig gespeichert und ausschließlich für die Zeitfenster der Nutzungsbegrenzung verwendet — ausgenommen der Vermerk, dass dein Konto sein kostenloses Beispiel-Design genutzt hat; dieser bleibt gespeichert, solange dein Konto besteht.</p>
+<p>Deine hochgeladenen Fotos und erzeugten Bilder werden gespeichert, damit sie in deiner Galerie verfügbar bleiben — so lange, bis du sie löschst oder die Löschung deiner Daten verlangst. Das Löschen eines Eintrags in der App entfernt das gespeicherte Original, das erzeugte Ergebnis sowie dazugehörige Objekt- oder Stilfotos und markierte Bereiche. Datensätze mit gehashter IP-Adresse werden nach 30 Tagen automatisch gelöscht, Nutzungszähler nach 90 Tagen. Zwei Nutzungsdatensätze bleiben gespeichert, solange dein Konto besteht: dass dein Konto sein kostenloses Beispiel-Design genutzt hat und wie viele Designs es während eines kostenlosen Testzeitraums erstellt hat.</p>
+
+<p>„Meine Daten löschen" entfernt dein Konto, deine Bilder und alle mit deinem Konto verknüpften Nutzungsdatensätze. Drei Dinge bleiben bestehen: Datensätze mit gehashter IP-Adresse, die nicht mit deinem Konto verknüpft sind und nach 30 Tagen ablaufen; die Merker auf deinem Gerät (Abschnitt 1); und bei RevenueCat der Eintrag mit deiner anonymen Kennung und deinem Abo-Verlauf, der weder Namen noch Fotos enthält. Wenn auch dieser RevenueCat-Eintrag entfernt werden soll, wende dich an uns, bevor du „Meine Daten löschen" nutzt, denn danach können wir ihn nicht mehr zuordnen. Apple bewahrt eigene Kaufunterlagen nach seiner Datenschutzrichtlinie auf.</p>
 
 <h2>5. Deine Rechte</h2>
 
@@ -138,14 +140,14 @@
 
 <h2>8. Eingebundene KI-Modelle</h2>
 
-<p>Enterio erzeugt Bilder mithilfe der folgenden KI-Anbieter. Dein hochgeladenes Raumfoto und deine Eingabe werden ausschließlich zur Erstellung deines Ergebnisses an den jeweiligen Anbieter übermittelt:</p>
+<p>Enterio erzeugt Bilder mithilfe der folgenden KI-Anbieter. Dein hochgeladenes Raumfoto und deine Eingabe werden zur Erstellung deines Ergebnisses an den jeweiligen Anbieter übermittelt:</p>
 
 <ul>
   <li>FLUX (fal.ai / Black Forest Labs) — Bildgenerierung für die Werkzeuge Dekorieren, Beleuchtung, Wand und Boden.</li>
   <li>GPT Image (OpenAI) — Bildgenerierung für Raum neu gestalten (einschließlich des kostenlosen Beispiel-Designs), Leeren Raum einrichten, Stil übertragen, Ersetzen, Hinzufügen und Entfernen.</li>
 </ul>
 
-<p>Nach den API-Bedingungen dieser Anbieter werden deine Bilder und Eingaben nicht zum Training ihrer KI-Modelle verwendet. Jeder Anbieter verarbeitet Daten nach seinen eigenen Datenschutzbestimmungen.</p>
+<p>OpenAI verwendet deine Bilder und Eingaben nicht zum Training seiner KI-Modelle. Die Bedingungen von Black Forest Labs erlauben, für FLUX übermittelte Bilder und Eingaben zum Training und zur Verbesserung seiner Modelle zu verwenden. Jeder Anbieter verarbeitet Daten nach seinen eigenen Datenschutzbestimmungen.</p>
 
 <p>Von Enterio erzeugte Bilder werden mithilfe künstlicher Intelligenz erstellt. Im Einklang mit der KI-Verordnung der EU (Artikel 50) trägt jede erzeugte Bilddatei eine maschinenlesbare Kennzeichnung (Metadaten), die sie als KI-generiert ausweist; das Beispiel-Design im Onboarding zeigt zusätzlich eine sichtbare Kennzeichnung. Bitte entferne diese Kennzeichnungen nicht.</p>
 
